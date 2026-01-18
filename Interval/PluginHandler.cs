@@ -5,6 +5,7 @@ namespace lucidcode.LucidScribe.Plugin.Interval
     public class PluginHandler : Interface.LucidPluginBase
     {
         private int interval = 20;
+        private int lastSecond = -1;
 
         public override string Name
         {
@@ -23,10 +24,13 @@ namespace lucidcode.LucidScribe.Plugin.Interval
         {
             get
             {
-                if ((DateTime.Now.Second - 1) % interval == 0)
+                if ((DateTime.Now.Second - 1) % interval == 0 &&
+                    lastSecond != DateTime.Now.Second)
                 {
+                    lastSecond = DateTime.Now.Second;
                     return 888;
                 }
+
                 return 1;
             }
         }
