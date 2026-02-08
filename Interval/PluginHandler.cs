@@ -4,8 +4,9 @@ namespace lucidcode.LucidScribe.Plugin.Interval
 {
     public class PluginHandler : Interface.LucidPluginBase
     {
-        private int interval = 20;
+        private int interval = 40;
         private int lastSecond = -1;
+        private DateTime lastTrigger;
 
         public override string Name
         {
@@ -17,6 +18,7 @@ namespace lucidcode.LucidScribe.Plugin.Interval
 
         public override bool Initialize()
         {
+            lastTrigger = DateTime.Now;
             return true;
         }
 
@@ -24,9 +26,10 @@ namespace lucidcode.LucidScribe.Plugin.Interval
         {
             get
             {
-                if ((DateTime.Now.Second - 1) % interval == 0 &&
+                if (DateTime.Now >= lastTrigger.AddSeconds(interval) &&
                     lastSecond != DateTime.Now.Second)
                 {
+                    lastTrigger = DateTime.Now;
                     lastSecond = DateTime.Now.Second;
                     return 888;
                 }
