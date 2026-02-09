@@ -52,12 +52,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_35DE2A9363DCB4CF8BD6FE7230ECF565"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_F4D7EA65385449C7AA2351CC0180CB34"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -71,6 +65,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_189DAF5A5D4EEC74A935C36FF0C90FBF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_35DE2A9363DCB4CF8BD6FE7230ECF565"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -170,7 +170,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:3.5.30729    "
+                "FrameworkVersion" = "8:3.5.30729     "
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -411,15 +411,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Lucid Scribe Interval"
-        "ProductCode" = "8:{7B737FF4-4CB1-4CBA-B0B6-B47509BC231F}"
-        "PackageCode" = "8:{D3787BE4-7299-4CC8-8021-FDC25F29BE66}"
+        "ProductCode" = "8:{EC4EE151-B7CC-402B-8569-F06F6AAD0126}"
+        "PackageCode" = "8:{9691D196-5307-49E6-B654-3BF7B8CD5041}"
         "UpgradeCode" = "8:{D69BA483-0900-4583-859C-3AAE825E4801}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.4"
+        "ProductVersion" = "8:1.0.5"
         "Manufacturer" = "8:lucidcode"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://www.lucidcode.com/Contact"
